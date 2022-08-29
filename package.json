@@ -1,12 +1,23 @@
 {
   "name": "utils-debug-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "node env for utils-debug",
+  "keywords": [
+    "justichentai"
+  ],
+  "license": "ISC",
+  "author": "justichentai",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup",
+    "dev": "esno index.ts"
   },
-  "keywords": ["justichentai"],
-  "author": "justichentai",
-  "license": "ISC"
+  "dependencies": {
+    "@justichentai/config-parsing": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2"
+  }
 }
